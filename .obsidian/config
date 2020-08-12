@@ -20,6 +20,7 @@
   "trashOption": "local",
   "alwaysUpdateLinks": true,
   "newFileLocation": "current",
-  "newLinkFormat": "absolute",
-  "attachmentFolderPath": "/"
+  "newLinkFormat": "relative",
+  "attachmentFolderPath": "/res",
+  "fileSortOrder": "alphabetical"
 }

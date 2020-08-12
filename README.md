@@ -1,1 +1,1 @@
-# stardust-xr-docs
+# Stardust XR documentation

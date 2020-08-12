@@ -21,11 +21,13 @@ root_type Message;
 ### 0: Error
 
 ## Data Types
-### `Vector2`
-A `TypedArray` of 2 `double` is treated as a `Vector2`.
-### `Vector3`
-A `TypedArray` of 3 `double` is treated as a `Vector3`.
-### `Quaternion`
-A `TypedArray` of 4 `double` is treated as a `Quaternion`.
-### `Transform`
-A `TypedArray` of 3 `TypedArray` containing 3 `double` is treated as a 3D transform matrix.
+### Vector2
+A `TypedVector` of 2 `double` is treated as a `Vector2`.
+### Vector3
+A `TypedVector` of 3 `double` is treated as a `Vector3`.
+### Quaternion
+A `TypedVector` of 4 `double` is treated as a `Quaternion`.
+### Pose
+A `Vector` containing a `Vector3` and a `Quaternion` is treated as a `Pose`.
+### Transform
+A `TypedVector` of 3 `TypedVector` containing 3 `double` is treated as a 3D transform matrix.
