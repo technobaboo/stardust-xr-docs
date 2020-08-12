@@ -1,0 +1,25 @@
+{
+  "theme": "obsidian",
+  "pluginEnabledStatus": {
+    "File explorer": true,
+    "Search": true,
+    "Quick switcher": true,
+    "Graph view": true,
+    "Backlinks": true,
+    "Command palette": true,
+    "Markdown format importer": true,
+    "Word count": false,
+    "Page preview": true,
+    "Outline": true,
+    "Open with default app": true
+  },
+  "strictLineBreaks": true,
+  "showLineNumber": true,
+  "foldHeading": true,
+  "foldIndent": true,
+  "trashOption": "local",
+  "alwaysUpdateLinks": true,
+  "newFileLocation": "current",
+  "newLinkFormat": "absolute",
+  "attachmentFolderPath": "/"
+}

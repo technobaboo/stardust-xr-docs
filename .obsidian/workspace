@@ -1,0 +1,102 @@
+{
+  "main": {
+    "id": "6ff5440238147c60",
+    "type": "split",
+    "children": [
+      {
+        "id": "3b2d10b5e41d80b0",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "protocol.md",
+            "mode": "source"
+          }
+        },
+        "group": "bb1ed19f034fac95"
+      },
+      {
+        "id": "04875f67d613c909",
+        "type": "leaf",
+        "active": true,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "protocol.md",
+            "mode": "preview"
+          }
+        },
+        "group": "bb1ed19f034fac95"
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "daa0874e2319d7e6",
+    "type": "split",
+    "children": [
+      {
+        "id": "de20256601f4268d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6e4e425838e2265d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "adb743625298fa53",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "943f7c2eb8c8521b",
+    "type": "split",
+    "children": [
+      {
+        "id": "1ec7704304f383fa",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c92d9ff80613693a",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {}
+            }
+          },
+          {
+            "id": "9dd8561e50ceec5e",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "lastOpenFiles": [
+    "protocol.md",
+    "objects/hmd.md",
+    "objects/Untitled.md",
+    "core/Untitled.md",
+    "Initial Client Connection.md"
+  ]
+}
