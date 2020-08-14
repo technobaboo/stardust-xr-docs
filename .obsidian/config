@@ -21,6 +21,6 @@
   "alwaysUpdateLinks": true,
   "newFileLocation": "current",
   "newLinkFormat": "relative",
-  "attachmentFolderPath": "/res",
-  "fileSortOrder": "alphabetical"
+  "attachmentFolderPath": "/",
+  "promptDelete": false
 }
