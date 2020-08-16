@@ -64,7 +64,3 @@ A `Vector` of 2 `double` is treated as a `Vector2`.
 A `Vector` of 3 `double` is treated as a `Vector3`.
 ### Quaternion
 A `Vector` of 4 `double` is treated as a `Quaternion`.
-### Pose
-A `Vector` containing a `Vector3` and a `Quaternion` is treated as a `Pose`.
-### Transform
-A `Vector` of 3 `Vector3` is treated as a 3D transform matrix.
