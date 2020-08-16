@@ -57,6 +57,7 @@ Message to pass the return value back to the program.
 | `data` | Flexbuffer containing return value |
 
 ## Data Types
+Stardust does not support the `Map` or `FixedTypedVector` flexbuffers datatypes.
 ### Vector2
 A `Vector` of 2 `double` is treated as a `Vector2`.
 ### Vector3
