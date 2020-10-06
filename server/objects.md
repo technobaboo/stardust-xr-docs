@@ -1,4 +1,4 @@
 Index for all objects in a standard scenegraph:
 
 - [[/hmd]]
-- [[/input]]
+- [[objects/input]]

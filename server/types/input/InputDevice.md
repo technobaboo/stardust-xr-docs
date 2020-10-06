@@ -1,6 +1,6 @@
 # InputDevice
 
-Type describing an input device (including all fallbacks). Always a child of [[/input]]/devices/
+Type describing an input device (including all fallbacks). Always a child of [[InputMethod]]/devices/
 
 ## Methods
 ### `registerHandInput(string name)`
