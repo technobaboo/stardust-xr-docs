@@ -1,7 +1,7 @@
 # HandInput
-### Derived from [[../../../objects/input]]
+### Derived from [[InputMethod]]
 
-An input that represents a full 27-bone hand. The [[../../../objects/input]] pose for a Hand is the middle of the palm with Z being away from the palm, Y from palm to fingertips, and X from palm to thumb on the left hand (same direction for right hand).
+An input representing a pointer with origin at the pose location
 
 ## Methods
-**TODO**: Set hand pose
+**TODO**: Properly secured field distance calculation accessible to clients
