@@ -5,6 +5,23 @@ A full 27-bone hand+forearm input with useful abstractions provided through the 
 
 The local space of a hand is where +Z is away from the palm, +Y is from the palm to the fingers, and +X is orthogonal and to the right.
 
+## Internal Properties
+### `pose`
+A multidimensional array describing a whole hand pose of the format
+
+```html
+[
+	
+	[Wrist position (Vector3)],
+	[
+		[Arm (wrist->elbow) orientation (Quaternion)],
+		[Arm thickness (float)]
+		[Elbow position (Vector3)]
+	]
+]
+```
+(This section is WIP)
+
 ## Datamap
 ### Required
 | Key             | Value Type                  | Description                                                        |
