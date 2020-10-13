@@ -1,7 +1,7 @@
 # InputMethod
 Represents an input device generically, with specifics being fleshed out in subclasses.
 
-## Internal properties
+## Internal Properties
 ### `type: uint8`
 |   | Name         | Description                                                                                                 |
 |---|--------------|-------------------------------------------------------------------------------------------------------------|
@@ -11,7 +11,7 @@ Represents an input device generically, with specifics being fleshed out in subc
 | 3 | [[HandInput]]       | Contains a full 27-bone hand skeleton (including forearm) and datamap for abstractions like grip, pinch distance/point, etc. |
 
 ### `datamap: Dictionary`
-See below:
+See #Datamap:
 
 ## Datamap
 The datamap is a dictionary containing abstracted and raw data related to the input that clients can use to analyze input in the most optimal way. It has keys of type `Key`(Flexbuffers-specific, in any other language use a `String`) and values:
