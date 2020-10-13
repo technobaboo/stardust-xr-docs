@@ -1,7 +1,17 @@
 # PointerInput
 ### Derived from [[InputMethod]]
 
-An input method for pointers, 
+An input method for pointers, such as the Huawei VR Glass's remote, a pointer put on an Index controller, Oculus style laser mouse, etc.
+
+The local space for a pointer is where +Z is along the pointer's direction, +X is to the right of the pointer when laying face up, and +Y is upward when laying face up.
+
+## Datamap
+### Required
+| Key    | Value Type                                | Description                                                                                                                                                                     |
+|--------|-------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| select | `float` (range `0.0`-`1.0`)               | Whether the pointer is attempting to select an object, usually through trigger. 1.0 is selected, 0.0 is not selected, and inbetween is to add smoothness to the interaction.    |
+| grab   | `float` (range `0.0`-`1.0`)               | How much the pointer is attempting to grab an object. 0.0 is not grabbing at all, 1.0 is grabbing the strongest, and inbetween is to add smoothness.                            |
+| scroll | `Vector2` (component range `-0.5`-`0.5`) | The amount to scroll on this input tick (sensitivity determined on the receiving client). Can be used for 2D scrolling as well as adjusting depth/size when grabbing an object. |
 
 ## Methods
 ### `setDirection(Vector3 direction)`
