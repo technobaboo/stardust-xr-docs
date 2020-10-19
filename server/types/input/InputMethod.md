@@ -14,8 +14,11 @@ Represents an input device generically, with specifics being fleshed out in subc
 See #Datamap:
 
 ## Internal Methods
-### `distanceToField(string field`
-Returns the distance from this input to a field in meters.
+### `distanceToField(string field)`
+Returns the distance from this input to a field in meters. `field` is the name of the field, not the full path.
+
+### `serialize()`
+Returns a serialized version of the InputMethod, each serialized schema is shown under #Serialization in the respective Input subclasses.
 
 ## Datamap
 The datamap is a dictionary containing abstracted and raw data related to the input that clients can use to analyze input in the most optimal way. It has keys of type `Key`(Flexbuffers-specific, in any other language use a `String`) and values:

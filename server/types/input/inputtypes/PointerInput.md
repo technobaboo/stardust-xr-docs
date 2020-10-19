@@ -5,6 +5,14 @@ An input method for pointers, such as the Huawei VR Glass's remote, a pointer pu
 
 The local space for a pointer is where +Z is along the pointer's direction, +X is to the right of the pointer when laying face up, and +Y is upward when laying face up.
 
+## Serialization
+| Key       | Value Type   |
+|-----------|--------------|
+| origin    | `Vector3`    |
+| direction | `Vector3`    |
+| tilt      | `float`      |
+| datamap   | `Dictionary` |
+
 ## Datamap
 ### Required
 | Key    | Value Type                                | Description                                                                                                                                                                     |
