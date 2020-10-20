@@ -20,6 +20,12 @@ Returns the distance from this input to a field in meters. `field` is the name o
 ### `serialize()`
 Returns a serialized version of the InputMethod, each serialized schema is shown under #Serialization in the respective Input subclasses.
 
+## Serialization
+| Key       | Value Type   |
+|-----------|-------------|
+| type    | `int`    |
+| distance    | `float`    |
+
 ## Datamap
 The datamap is a dictionary containing abstracted and raw data related to the input that clients can use to analyze input in the most optimal way. It has keys of type `Key`(Flexbuffers-specific, in any other language use a `String`) and values:
 
