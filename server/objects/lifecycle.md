@@ -8,13 +8,3 @@ Executes `method` on object at `path` on the client when the main logic loop of 
 `method` must have arguments of `(double delta, double timeToRender)`. 
 
 `delta` gives the time in seconds between the current time and the last time the logic loop executed while `timeToRender` gives the time in ms since epoch when the current frame is expected to reach the user's eyes.
-
-### `subscribeRenderStart(string path, string method)`
-Executes `method` on object at `path` on the client when the frame starts rendering.
-
-`method` must have arguments of `(double delta, double timeToRender)`. 
-
-`delta` gives the time in seconds between the current time and the last time the logic loop executed while `timeToRender` gives the time in ms since epoch when the current frame is expected to reach the user's eyes.
-
-### `subscribeFrameEnd(string path, string method)`
-Executes `method` on object at `path` on the client when the previous frame finishes rendering. When this executes you can edit the properties of any renderable object safely. `method` must have arguments of `(double delta)`. `delta` gives the time in seconds between the current frame and the previous frame.
