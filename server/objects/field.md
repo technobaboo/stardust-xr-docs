@@ -7,5 +7,5 @@ Object managing fields for interaction.
 Creates a new [[BoxField]] at `/field/[name]`.
 
 
-### `createSphereField(string name, Vector3 origin, double radius)`
+### `createSphereField(string name, Vector3 origin, float radius)`
 Creates a new [[SphereField]] at `/field/[name]`.
