@@ -1,0 +1,8 @@
+include "common.fbs";
+namespace StardustXR;
+
+table Pointer {
+	origin:vec3;
+	direction:vec3;
+	tilt:float;
+}

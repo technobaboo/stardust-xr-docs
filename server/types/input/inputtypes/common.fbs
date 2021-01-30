@@ -1,0 +1,7 @@
+namespace StardustXR;
+
+struct vec3 {
+	x:float;
+	y:float;
+	z:float;
+}

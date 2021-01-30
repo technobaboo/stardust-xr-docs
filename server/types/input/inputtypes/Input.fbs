@@ -1,0 +1,14 @@
+include "PointerInput.fbs";
+namespace StardustXR;
+
+union InputMethod {
+	Pointer
+}
+
+table Input {
+	input:InputMethod;
+	distance:float;
+	datamap:[ubyte] (flexbuffer);
+}
+
+root_type Input;
