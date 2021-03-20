@@ -5,3 +5,21 @@ struct vec3 {
 	y:float;
 	z:float;
 }
+
+struct quat {
+	w:float;
+	x:float;
+	y:float;
+	z:float;
+}
+
+struct pose {
+	position:vec3;
+	rotation:quat;
+}
+
+struct joint {
+	position:vec3;
+	rotation:quat;
+	radius:float;
+}

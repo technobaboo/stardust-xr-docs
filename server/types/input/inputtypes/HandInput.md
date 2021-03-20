@@ -1,23 +1,44 @@
 # HandInput
-### Derived from [[InputMethod]]
+### Derived from [[InputMethod]] and [[Spatial]] (`scalable: false`)
 
 A full 27-bone hand+forearm input with useful abstractions provided through the datamap.
 
 The local space of a hand is where +Z is away from the palm, +Y is from the palm to the fingers, and +X is orthogonal and to the right.
 
-## Internal Properties
-### `pose`
-A multidimensional array describing a whole hand pose of the format
+## Serialization
+| Key       | Value Type   |
+|-----------|--------------|
+| origin    | `Vector3`    |
+| direction | `Vector3`    |
+| tilt      | `float`      |
+| datamap   | `Dictionary` |
 
-```html
+```js
 [
-	
-	[Wrist position (Vector3)],
-	[
-		[Arm (wrist->elbow) orientation (Quaternion)],
-		[Arm thickness (float)]
-		[Elbow position (Vector3)]
-	]
+	thumb metacarpal,
+	thumb proximal,
+	thumb distal,
+	thumb tip,
+	index metacarpal,
+	index proximal,
+	index intermediate,
+	index distal,
+	index tip,
+	middle metacarpal,
+	middle proximal,
+	middle intermediate,
+	middle distal,
+	middle tip,
+	ring metacarpal,
+	ring proximal,
+	ring intermediate,
+	ring distal,
+	ring tip,
+	little metacarpal,
+	little proximal,
+	little intermediate,
+	little distal,
+	little tip
 ]
 ```
 (This section is WIP)
@@ -31,8 +52,6 @@ A multidimensional array describing a whole hand pose of the format
 | pinchStrength   | `float` (range `0.0`-`1.0`) | How much the hand is pinching                                      |
 | pinchDistance   | `float` (>`0.0`)            | The distance in meters between the thumb and index finger |
 | grabStrength    | `float` (range `0.0`-`1.0`) | How much the hand is making a fist                                 |
-| fingerDirection | `Vector3` (direction)       | The average direction all fingers are pointing towards             |
-
 
 ## Methods
 **TODO**: Properly secured field distance calculation accessible to clients

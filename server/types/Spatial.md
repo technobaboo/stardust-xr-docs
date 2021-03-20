@@ -12,10 +12,13 @@ If false, object's scale cannot be modified from a client (e.g. [[Field]]s, [[Po
 
 ## Methods
 ### `setOrigin(Vector3 origin)`
-Sets the origin to `origin`. 
+Sets the origin to `origin` if `translatable` is not `false`.
 
 ### `setOrientation(Quat orientation)`
 Sets the orientation to `orientation` if `rotatable` is not `false`.
+
+### `setScale(Vector3 scale)`
+Sets the scale to `scale`. 	
 
 ### `setPose(Vector3 origin, Quat orientation)`
 Sets the pose using `origin` and `orientation` relative to the pose's space if `translatable` and `rotatable` are true. This method saves on IPC calls compared to `setOrigin` and `setOrientation` in sequence.

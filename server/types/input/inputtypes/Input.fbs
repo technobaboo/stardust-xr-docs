@@ -1,14 +1,16 @@
 include "PointerInput.fbs";
+include "HandInput.fbs";
 namespace StardustXR;
 
-union InputMethod {
-	Pointer
+union InputDataRaw {
+	Pointer,
+	Hand
 }
 
-table Input {
-	input:InputMethod;
-	distance:float;
+table InputData {
+	input:InputDataRaw (required);
+	distance:float = 0;
 	datamap:[ubyte] (flexbuffer);
 }
 
-root_type Input;
+root_type InputData;

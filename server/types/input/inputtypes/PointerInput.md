@@ -1,4 +1,4 @@
-# PointerInput
+	# PointerInput
 ### Derived from [[InputMethod]]
 
 An input method for pointers, such as the Huawei VR Glass's remote, a pointer put on an Index controller, Oculus style laser mouse, etc.
