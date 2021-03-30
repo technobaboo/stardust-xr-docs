@@ -21,4 +21,10 @@ Sets the orientation to `orientation` if `rotatable` is not `false`.
 Sets the scale to `scale`. 	
 
 ### `setPose(Vector3 origin, Quat orientation)`
-Sets the pose using `origin` and `orientation` relative to the pose's space if `translatable` and `rotatable` are true. This method saves on IPC calls compared to `setOrigin` and `setOrientation` in sequence.
+Sets the pose relative to the Spatial's space if `translatable` and `rotatable` are true. This method saves on IPC calls compared to `setOrigin` and `setOrientation` in sequence.
+
+### `setTransform(Vector3 origin, Quat orientation)`
+Sets the transform relative to the Spatial's space if `translatable`, `rotatable` and `scalable` are true. This method saves on IPC calls compared to `setOrigin`, `setOrientation`, and `setScale` in sequence.
+
+### `setSpatialParent(string parentPath)`
+Sets the spatial parent of this `Spatial` while keeping the "absolute" position in space intact.
