@@ -11,6 +11,18 @@ If false, object's rotation cannot be modified from a client (e.g. point lights,
 If false, object's scale cannot be modified from a client (e.g. [[Field]]s, [[PointerInput]]s).
 
 ## Methods
+### `move(Vector3 position)`
+Moves the Spatial relative to itself if `translatable` is not `false`.
+
+### `rotate(Quat rotation)`
+Rotates the Spatial relative to itself if `rotatable` is not `false`.
+
+### `rotateAround(Vector3 point, Quat rotation)`
+Rotates the Spatial around `point` (relative to itself) if `rotatable` is not `false`.
+
+### `scale(float scale)`
+Multiplies the Spatial's scale vector by `scale` if `scalable` is not `false`.
+
 ### `setOrigin(Vector3 origin)`
 Sets the origin to `origin` if `translatable` is not `false`.
 
@@ -18,7 +30,7 @@ Sets the origin to `origin` if `translatable` is not `false`.
 Sets the orientation to `orientation` if `rotatable` is not `false`.
 
 ### `setScale(Vector3 scale)`
-Sets the scale to `scale`. 	
+Sets the scale to `scale` if `scalable` is not `false`.
 
 ### `setPose(Vector3 origin, Quat orientation)`
 Sets the pose relative to the Spatial's space if `translatable` and `rotatable` are true. This method saves on IPC calls compared to `setOrigin` and `setOrientation` in sequence.
